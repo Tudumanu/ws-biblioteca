@@ -1,7 +1,7 @@
 package biblioteca.service;
 
-import biblioteca.dao.LivroDAO;
-import biblioteca.model.Livro;
+import beans.dao.LivroDAO;
+import model.Livro;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

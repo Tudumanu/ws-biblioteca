@@ -1,6 +1,9 @@
 # ws-biblioteca
 Aplicativo web que expoem serviço JAX-WS (SOAP, WSDL) para busca de livros em uma bilbioteca
 
+Dependência:
+Por causa da classe Livro e do DAO já existentes, usando o mesmo BD, foi adicionado referencia aos .class do projeto jsf-biblioteca - https://github.com/Tudumanu/jsf-biblioteca
+
 Libs adicionadas manualmente:
 
 * Hibernate 5.0.9
