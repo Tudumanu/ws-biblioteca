@@ -13,6 +13,14 @@ public class LivroDAO {
 
     public LivroDAO() {}
 
+    public Livro show(int id) {
+        session = HibernateUtil.getSessionFactory().openSession();
+        Livro livro = session.get(Livro.class, new Integer(id));
+        session.close();
+
+        return livro;
+    }
+
     public List<Livro> search(String text) {
         session = HibernateUtil.getSessionFactory().openSession();
         List<Livro> list = (List<Livro>) session.createCriteria(Livro.class)
